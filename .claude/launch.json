@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "ecostore", "runtimeExecutable": "npx", "runtimeArgs": ["-y", "http-server@14.1.1", "-p", "5510", "-c-1"], "port": 5510 },
+    { "name": "chatbot-test", "runtimeExecutable": "node", "runtimeArgs": ["--env-file-if-exists=backend/.env", "-e", "process.env.PORT='3002'; process.chdir('backend'); import('./backend/server.js')"], "port": 3002 }
+  ]
+}

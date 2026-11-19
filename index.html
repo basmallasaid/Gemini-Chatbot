@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoStore — Sustainable Everyday Products</title>
+  <meta name="description" content="EcoStore offers reusable bags, water bottles and sustainable home goods that make greener living simple." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="EcoStore home">
+        <span class="logo-mark"><i data-lucide="leaf"></i></span>
+        <span class="logo-text">EcoStore</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#sustainability" class="nav-link">Sustainability</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cart-btn" aria-label="Shopping cart, 0 items">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow"><i data-lucide="sprout"></i> Sustainable everyday essentials</span>
+          <h1 class="hero-title">Small Choices.<br /><span class="accent">Greener Future.</span></h1>
+          <p class="hero-text">
+            Thoughtfully made reusable products for your kitchen, your commute and your home —
+            designed to last, priced to be practical, and kinder to the planet.
+          </p>
+          <div class="hero-ctas">
+            <a href="#shop" class="btn btn-primary">Shop Now <i data-lucide="arrow-right"></i></a>
+            <a href="#about" class="btn btn-outline">Explore Our Mission</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>100%</strong><span>Plastic-free packaging</span></li>
+            <li><strong>50+</strong><span>Reusable essentials</span></li>
+            <li><strong>4.9★</strong><span>Sample rating</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1633878353649-66a04593751f?auto=format&fit=crop&w=1000&q=80"
+              alt="Zero-waste lifestyle products: bamboo utensils, a cotton pouch and a wooden container"
+              width="1000" height="1150" />
+          </div>
+          <div class="floating-card card-1">
+            <span class="fc-icon"><i data-lucide="recycle"></i></span>
+            <div><strong>Reusable</strong><small>Built to last for years</small></div>
+          </div>
+          <div class="floating-card card-2">
+            <span class="fc-icon"><i data-lucide="truck"></i></span>
+            <div><strong>Carbon-neutral</strong><small>Shipping on every order</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section categories" id="shop">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Shop by category</span>
+          <h2 class="section-title">Everyday swaps that make a difference</h2>
+          <p class="section-sub">Start with the things you use most. Each category is curated for quality, durability and low impact.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card reveal">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1584473457406-6240486418e9?auto=format&fit=crop&w=800&q=80"
+                   alt="Mesh produce bag filled with cucumbers and greens" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="category-body">
+              <h3>Reusable Bags</h3>
+              <p>Cotton totes and mesh produce bags that replace hundreds of single-use plastics.</p>
+              <a href="#products" class="link-btn">Explore <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="category-card reveal">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=800&q=80"
+                   alt="Wood-finish insulated water bottle" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="category-body">
+              <h3>Water Bottles</h3>
+              <p>Insulated stainless steel bottles that keep drinks cold for 24h and hot for 12h.</p>
+              <a href="#products" class="link-btn">Explore <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="category-card reveal">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80"
+                   alt="Handmade ceramic cups on a shelf" loading="lazy" width="800" height="600" />
+            </div>
+            <div class="category-body">
+              <h3>Sustainable Home</h3>
+              <p>Natural materials for the kitchen and home — bamboo, glass, ceramic and more.</p>
+              <a href="#products" class="link-btn">Explore <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="eyebrow">Featured products</span>
+            <h2 class="section-title">Bestsellers our community loves</h2>
+          </div>
+          <p class="demo-note"><i data-lucide="info"></i> Prices shown are sample demo prices.</p>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card reveal" data-id="tote" data-name="Reusable Cotton Tote Bag" data-price="14.00">
+            <div class="product-media">
+              <span class="badge">Bestseller</span>
+              <button class="wish-btn" aria-label="Add Reusable Cotton Tote Bag to wishlist" aria-pressed="false"><i data-lucide="heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80"
+                   alt="Natural kraft-colored reusable tote bag" loading="lazy" width="700" height="700" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Reusable Bags</span>
+              <h3 class="product-name">Reusable Cotton Tote Bag</h3>
+              <div class="product-row">
+                <p class="price"><span class="price-label">Demo price</span>$14.00</p>
+                <button class="btn btn-add" aria-label="Add Reusable Cotton Tote Bag to cart">
+                  <i data-lucide="plus"></i><span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="bottle" data-name="Stainless Steel Water Bottle" data-price="29.00">
+            <div class="product-media">
+              <span class="badge badge--new">New</span>
+              <button class="wish-btn" aria-label="Add Stainless Steel Water Bottle to wishlist" aria-pressed="false"><i data-lucide="heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80"
+                   alt="Matte green stainless steel water bottle" loading="lazy" width="700" height="700" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Water Bottles</span>
+              <h3 class="product-name">Stainless Steel Water Bottle</h3>
+              <div class="product-row">
+                <p class="price"><span class="price-label">Demo price</span>$29.00</p>
+                <button class="btn btn-add" aria-label="Add Stainless Steel Water Bottle to cart">
+                  <i data-lucide="plus"></i><span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="bamboo" data-name="Bamboo Kitchen Set" data-price="24.00">
+            <div class="product-media">
+              <button class="wish-btn" aria-label="Add Bamboo Kitchen Set to wishlist" aria-pressed="false"><i data-lucide="heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1556037867-bc64ed32b2af?auto=format&fit=crop&w=700&q=80"
+                   alt="Bamboo spoon, fork and knife on a bamboo cutting board" loading="lazy" width="700" height="700" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Sustainable Home</span>
+              <h3 class="product-name">Bamboo Kitchen Set</h3>
+              <div class="product-row">
+                <p class="price"><span class="price-label">Demo price</span>$24.00</p>
+                <button class="btn btn-add" aria-label="Add Bamboo Kitchen Set to cart">
+                  <i data-lucide="plus"></i><span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-id="containers" data-name="Eco-Friendly Storage Containers" data-price="36.00">
+            <div class="product-media">
+              <span class="badge">Set of 3</span>
+              <button class="wish-btn" aria-label="Add Eco-Friendly Storage Containers to wishlist" aria-pressed="false"><i data-lucide="heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1681146375786-07ca2c058ce1?auto=format&fit=crop&w=700&q=80"
+                   alt="Stack of three glass storage containers with bamboo lids" loading="lazy" width="700" height="700" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Sustainable Home</span>
+              <h3 class="product-name">Eco-Friendly Storage Containers</h3>
+              <div class="product-row">
+                <p class="price"><span class="price-label">Demo price</span>$36.00</p>
+                <button class="btn btn-add" aria-label="Add Eco-Friendly Storage Containers to cart">
+                  <i data-lucide="plus"></i><span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=80"
+               alt="Hands holding a small plant growing in soil" loading="lazy" width="900" height="1000" />
+          <div class="about-badge">
+            <strong>Est. 2020</strong>
+            <span>Demo brand story</span>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="eyebrow">About EcoStore</span>
+          <h2 class="section-title">Making sustainable living simple, practical, and accessible.</h2>
+          <p>
+            We started EcoStore with one belief: going green shouldn't feel complicated or expensive.
+            Every product we carry is chosen to replace a disposable item you already use — and to do
+            the job better.
+          </p>
+          <ul class="check-list">
+            <li><i data-lucide="check"></i> Responsibly sourced, natural and recycled materials</li>
+            <li><i data-lucide="check"></i> Plastic-free, compostable packaging on every order</li>
+            <li><i data-lucide="check"></i> Fair prices, so better choices are within reach</li>
+          </ul>
+          <a href="#sustainability" class="btn btn-primary">Our Impact <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUSTAINABILITY ================= -->
+    <section class="section sustainability" id="sustainability">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow--light">Why it matters</span>
+          <h2 class="section-title">Every swap adds up</h2>
+          <p class="section-sub">Small daily habits create real change when millions of people make them together.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <span class="benefit-icon"><i data-lucide="trash-2"></i></span>
+            <h3>Reduce Everyday Waste</h3>
+            <p>Cut down on single-use plastics that end up in landfills and oceans after just one use.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon"><i data-lucide="refresh-cw"></i></span>
+            <h3>Choose Reusable Products</h3>
+            <p>Durable, well-made essentials that serve you for years instead of minutes.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <span class="benefit-icon"><i data-lucide="globe-2"></i></span>
+            <h3>Protect Our Planet</h3>
+            <p>Lower your footprint and help preserve forests, oceans and wildlife for future generations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="section newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter-card reveal">
+          <div class="newsletter-text">
+            <span class="eyebrow">Join the community</span>
+            <h2 class="section-title">Get greener tips &amp; 10% off your first order</h2>
+            <p>One thoughtful email a month. New arrivals, low-waste ideas, no spam — ever.</p>
+          </div>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <label for="email" class="sr-only">Email address</label>
+            <div class="input-wrap">
+              <i data-lucide="mail"></i>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" aria-describedby="form-msg" />
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo--light" aria-label="EcoStore home">
+          <span class="logo-mark"><i data-lucide="leaf"></i></span>
+          <span class="logo-text">EcoStore</span>
+        </a>
+        <p>Sustainable everyday products for people who want to live lighter on the planet — without compromise.</p>
+        <div class="socials">
+          <a href="#" aria-label="EcoStore on Instagram (demo link)"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="EcoStore on Facebook (demo link)"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="EcoStore on X / Twitter (demo link)"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="EcoStore on YouTube (demo link)"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#products">Reusable Bags</a></li>
+          <li><a href="#products">Water Bottles</a></li>
+          <li><a href="#products">Sustainable Home</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact <span class="demo-tag">Demo info</span></h4>
+        <ul class="contact-list">
+          <li><i data-lucide="map-pin"></i> 123 Green Street, Demo City</li>
+          <li><i data-lucide="phone"></i> +1 (555) 000-0000</li>
+          <li><i data-lucide="mail"></i> hello@ecostore.example</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> EcoStore. All rights reserved. Demo website — products and prices are samples.</p>
+      <p>Made with <i data-lucide="heart"></i> for the planet.</p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle-2"></i>
+    <span id="toast-text">Added to cart</span>
+  </div>
+
+  <!-- ================= CHATBOT ================= -->
+  <button class="chat-fab" id="chat-fab" aria-label="Open EcoStore assistant" aria-expanded="false" aria-controls="chat-window">
+    <i data-lucide="message-circle" class="fab-open"></i>
+    <i data-lucide="x" class="fab-close"></i>
+  </button>
+
+  <section class="chat-window" id="chat-window" role="dialog" aria-label="EcoStore assistant chat" aria-hidden="true">
+    <header class="chat-header">
+      <span class="chat-avatar"><i data-lucide="leaf"></i></span>
+      <div class="chat-title">
+        <strong>Eco Assistant</strong>
+        <small><span class="status-dot"></span> Online · English &amp; العربية</small>
+      </div>
+      <button class="chat-close" id="chat-close" aria-label="Close chat"><i data-lucide="x"></i></button>
+    </header>
+
+    <div class="chat-messages" id="chat-messages" aria-live="polite">
+      <div class="msg msg--bot">
+        <p>Hi! 🌿 I'm Eco, your EcoStore assistant. Ask me about our reusable bags, water bottles or sustainable home products.</p>
+        <p dir="rtl" lang="ar">أهلاً! أنا مساعد EcoStore، اسألني عن منتجاتنا الصديقة للبيئة.</p>
+      </div>
+    </div>
+
+    <form class="chat-form" id="chat-form" novalidate>
+      <label for="chat-input" class="sr-only">Type your message</label>
+      <input type="text" id="chat-input" placeholder="Ask about our products… / اكتب سؤالك" autocomplete="off" maxlength="1000" dir="auto" />
+      <button type="submit" class="chat-send" id="chat-send" aria-label="Send message"><i data-lucide="send-horizontal"></i></button>
+    </form>
+  </section>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
